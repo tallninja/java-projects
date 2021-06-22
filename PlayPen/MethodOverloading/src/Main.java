@@ -2,6 +2,9 @@ public class Main {
 
     public static void main(String[] arg) {
         calcFeetAndInchesToCM(5, 8);
+        calcFeetAndInchesToCM(-1, 8);
+        calcFeetAndInchesToCM(5, 13);
+        calcFeetAndInchesToCM(5, -1);
         calcFeetAndInchesToCM(6);
     }
 
