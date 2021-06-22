@@ -10,6 +10,11 @@ public class Main {
         String result = isPrime(num) ? "Prime" : "NOT Prime";
         System.out.printf("> %d is %s %n", num, result);
         input.close();
+
+        int[] numbers = {1, 2, 3, 4};
+        for(int number : numbers) {
+            System.out.println(number);
+        }
     }
 
     public static boolean isPrime(int num) {
