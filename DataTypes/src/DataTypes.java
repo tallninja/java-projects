@@ -26,10 +26,24 @@ public class DataTypes {
         System.out.println("Long Max Value: " + maxLong);
         System.out.println("Long Min Value: " + minLong);
 
-        // Floats
+        // Floats 32-bits || single precision :
         float maxFloat = Float.MAX_VALUE;
         float minFloat = Float.MIN_VALUE;
         System.out.println("Float Max Value" + maxFloat);
         System.out.println("Float Min Value" + minFloat);
+
+        // Doubles 64-bits || double precision :
+        double maxDouble = Double.MAX_VALUE;
+        double minDouble = Double.MIN_VALUE;
+        System.out.println("Double Max Value: " + maxDouble);
+        System.out.println("Double Min Value: " + minDouble);
+
+        // The concept of double precision :
+        int myInt = 5 / 3;
+        float myFloat = 5f / 3;
+        double myDouble = 5d / 3;
+        System.out.println("My Int: " + myInt);
+        System.out.println("My Float: " + myFloat);
+        System.out.println("My Double: " + myDouble);
     }
 }
