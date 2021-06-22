@@ -16,9 +16,9 @@ public class Main {
                         attemptsLeft, attemptsLeft == 1 ? "" : "s" , max);
 
                 boolean isAnInt = input.hasNextInt();
-                int userGuess = input.nextInt();
 
                 if(isAnInt) {
+                    int userGuess = input.nextInt();
                     if(userGuess < correct) {
                         System.out.printf("%d is too LOW %n", userGuess);
                     } else if(userGuess > correct) {
