@@ -1,3 +1,5 @@
+import jdk.jfr.Unsigned;
+
 public class Complex {
 
     private double real;
@@ -54,6 +56,11 @@ public class Complex {
 
     public double getAngle() {
         return Math.atan2(this.getImaginary(), this.getReal()) * 57.2958;
+    }
+
+    // x + yj;
+    public String convertToString() { // ternary operator
+        return String.format("%.4f %s %.4fj", this.getReal(), (this.getImaginary() < 0 ? "-" : "+"), (this.getImaginary() < 0 ? this.getImaginary() * -1 : this.getImaginary()));
     }
 
     // getting the real number
