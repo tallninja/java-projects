@@ -44,13 +44,13 @@ public class Vector {
         return Math.sqrt((Math.pow(getX(), 2) + Math.pow(getY(), 2) + Math.pow(getZ(), 2)));
     }
 
-    public DirectionAngle getDirectionAngle() {
+    public void getDirectionAngle() {
         double magnitude = calculateMagnitude();
         double alpha = Math.acos((double) getX() / magnitude);
         double beta = Math.acos((double) getY() / magnitude);
         double gamma = Math.acos((double) getZ() / magnitude);
 
-        return new DirectionAngle(alpha, beta, gamma);
+        new DirectionAngle(alpha, beta, gamma);
     }
 
     public double getAngle(Vector vector) {
@@ -60,7 +60,7 @@ public class Vector {
     }
 
     public boolean isParallelTo(Vector vector) {
-        return !this.isSameAs(vector) && this.getAngle(vector) == 0;
+        return !this.isSameAs(vector) && this.getAngle(vector) == (double) 0;
     }
 
     public String toString() {
