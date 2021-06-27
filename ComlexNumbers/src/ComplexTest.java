@@ -13,6 +13,7 @@ public class ComplexTest {
         Complex num1 = new Complex(real, imaginary);
 
         System.out.println("Enter the real and imaginary values of num2: ");
+        boolean isDouble = input.hasNextDouble();
         real = input.nextDouble();
         imaginary = input.nextDouble();
         Complex num2 = new Complex(real, imaginary);

@@ -11,6 +11,12 @@ public class Complex {
          setImaginary(imaginary); // validate imaginary number
     }
 
+    public Complex(double imaginary) {
+        setReal(0);
+        setImaginary(imaginary);
+    }
+
+
     // Complex num1 = new Complex(real, imaginary);
     // Complex num2 = new Complex(real, imaginary);
     // num1.add(num2: Complex); -> Complex;
