@@ -53,6 +53,7 @@ public class VectorTest {
         }
         System.out.println();
         input.close();
+
     }
 
 }

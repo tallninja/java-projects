@@ -2,7 +2,7 @@ public class TimerTest {
 
     public static void main(String[] args) {
         Timer timer1 = new Timer(1, 2, 0);
-        Timer timer2 = new Timer(6, 14, 11);
+        Timer timer2 = new Timer(6, 14, 110);
         Timer timer3 = new Timer(5, 20, -10);
         Timer timer4 = new Timer(1, -20, -10);
 
