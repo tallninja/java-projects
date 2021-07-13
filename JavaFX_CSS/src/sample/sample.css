@@ -1,0 +1,14 @@
+.root {
+    -fx-background-color: black;
+}
+
+.label {
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+    -fx-font-family: "Liberation Mono";
+    -fx-alignment: center;
+}
+
+#label1 {
+    -fx-font-size: 60;
+}
