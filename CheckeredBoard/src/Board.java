@@ -12,8 +12,8 @@ public class Board extends JPanel {
     private void display(Graphics g) {
         Graphics2D g2d =  (Graphics2D) g;
 
-        int height = BOARD_HEIGHT / SIZEY;
-        int width = BOARD_WIDTH / SIZEX;
+        int height = BOARD_HEIGHT / SIZEY; //40
+        int width = BOARD_WIDTH / SIZEX; // 40
 
         for(int row = 0; row < SIZEX; row++) {
             int x, y;

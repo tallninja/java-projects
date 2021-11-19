@@ -28,6 +28,8 @@ public class Main {
         System.out.println("Enter Hamming Distance:");
         hammingDistance = input.nextInt();
 
+        System.out.println("String 2 = " + generateString(string3, hammingDistance));
+
 
 
     }
@@ -42,6 +44,16 @@ public class Main {
         }
 
         return count;
+    }
+
+    public static String generateString(String string3, int hammingDistance) {
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < string3.length(); i++) {
+            sb.append(string3.charAt(i));
+        }
+
+        return sb.toString();
     }
 
 }
